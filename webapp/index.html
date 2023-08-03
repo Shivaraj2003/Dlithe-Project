@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hello!</title>
+
+    <style>
+        .navbar {
+            z-index: 2;
+        }
+        body{
+            background-color: rgb(246,246,248);
+        }
+        
+        .landing-abt {
+            height: 90vh;
+            overflow: hidden;
+        }
+
+        .maincontent {
+            height: 80vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .maincontent h1 {
+            font-size: 4em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .content p {
+            position: relative;
+            right: 70%;
+            top: 10%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .content {
+            height: auto;
+            width: 40vw;
+            position: relative;
+            right: 30%;
+        }
+
+        .small-info {
+            width: 10vw;
+            text-align: center;
+        }
+
+        
+
+        .two {
+            position: relative;
+            left: 8%;
+        }
+
+        .three {
+            position: relative;
+            left: 16%;
+        }
+
+        .four {
+            position: relative;
+            left: 24%;
+        }
+
+        td span {
+            font-weight: bold;
+            font-size: 1.5em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        @media screen and (max-width: 768px) {
+            .landing-abt {
+                position: absolute;
+                top: 10%;
+            }
+
+            .maincontent h1 {
+                font-size: 2.5em;
+                position: relative;
+                bottom: 10vh;
+            }
+
+            .maincontent {
+                position: relative;
+                bottom: 10vh;
+            }
+
+            .content {
+                height: auto;
+                width: auto;
+            }
+
+            .content p {
+                position: relative;
+                right: 5%;
+                bottom: 8vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">BusManagement</a>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mx-1  my-4 my-md-1 mb-lg-0 nav-underline ">
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="mx-1 ">
+                    <button type="button" class="btn btn-warning  btn-sm "><a href="./login.jsp" class="text-decoration-none text-dark fw-bold">Login</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div >
+        <div class="maincontent mb-3 p-5">
+            <h1 class="text-center"> LocalBus<span class="text-warning"> Management <br>
+                    <div class="my-1 text-center">System | Admin</div>
+                </span> </h1>
+            
+        </div>
+    </div>
+</body>
+</html>
